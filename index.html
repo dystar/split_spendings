@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Spend lists</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+ <div class="container">
+   <h4 class="text-center">Расчет совместных трат равномерно между участниками</h4>
+   <h3>Участники</h3>
+   <div id="persons"></div>
+   <form id="add_person">
+	 <div class="form-group">
+		<input type="text" name="person_name" placeholder="Вася" class="form-control">
+	</div>
+	 <button type="submit" class="btn btn-primary">Добавить участника</button>
+   </form>
+   <h3>Списки трат</h3>
+   <div id="lists"></div>
+   <form id="add_list">
+    <div class="form-group">
+		<input type="text" name="list_title" placeholder="Поездка на пикник" class="form-control">
+	</div>
+	 <button type="submit" class="btn btn-primary">Создать список</button>
+   </form>
+ </div>
+ <script src="./script.js"></script>
+</body>
+</html>
